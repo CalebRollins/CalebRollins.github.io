@@ -1,0 +1,826 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.6f9f088a92d5bc0428cb.css">.slidecontainer{display:block;margin:0;padding:1em 3px 0}.imageslide{max-width:100%;height:auto;margin:0}.imageslidecaption{height:2.25em}.imageslidecaption,.slidecontrols{text-align:center;display:block}.slidearrow{cursor:pointer;padding:5px}.slidearrow,.slidepip{display:inline-block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flex-container{display:-webkit-flex;display:flex;word-wrap:break-word;width:98vw;max-width:98vw}.content{padding:2em 15% 0 5%;min-width:0;max-width:60em}.sidenav{min-width:18em;background-color:#1a1b1e;height:100%;min-height:100vh}.caption{width:100%;text-align:center;font-style:italic}.navgrid{position:fixed;width:18em;padding-top:2em;padding-bottom:2em}.navbutton{transition:background-color .85s linear}.navbutton:hover{background-color:red}@media (max-width:800px){.flex-container{-webkit-flex-direction:column;flex-direction:column;max-width:100vw}.sidenav{min-height:0;min-width:100%}.navgrid{position:static;width:100%}.content{padding:2% 7%}}.center{margin:0 auto;width:90%}pre{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}code{display:block;overflow-x:scroll}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style><meta name="generator" content="Gatsby 2.1.31"/><title data-react-helmet="true"></title><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=null"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=null"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=null"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=null"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=null"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=null"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=null"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=null"/><style type="text/css" id="server-side-jss">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+.jss1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.jss2 {
+  margin: 0;
+  box-sizing: border-box;
+}
+.jss3 {
+  min-width: 0;
+}
+.jss4 {
+  flex-direction: column;
+}
+.jss5 {
+  flex-direction: column-reverse;
+}
+.jss6 {
+  flex-direction: row-reverse;
+}
+.jss7 {
+  flex-wrap: nowrap;
+}
+.jss8 {
+  flex-wrap: wrap-reverse;
+}
+.jss9 {
+  align-items: center;
+}
+.jss10 {
+  align-items: flex-start;
+}
+.jss11 {
+  align-items: flex-end;
+}
+.jss12 {
+  align-items: baseline;
+}
+.jss13 {
+  align-content: center;
+}
+.jss14 {
+  align-content: flex-start;
+}
+.jss15 {
+  align-content: flex-end;
+}
+.jss16 {
+  align-content: space-between;
+}
+.jss17 {
+  align-content: space-around;
+}
+.jss18 {
+  justify-content: center;
+}
+.jss19 {
+  justify-content: flex-end;
+}
+.jss20 {
+  justify-content: space-between;
+}
+.jss21 {
+  justify-content: space-around;
+}
+.jss22 {
+  justify-content: space-evenly;
+}
+.jss23 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.jss23 > .jss2 {
+  padding: 4px;
+}
+.jss24 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.jss24 > .jss2 {
+  padding: 8px;
+}
+.jss25 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.jss25 > .jss2 {
+  padding: 12px;
+}
+.jss26 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.jss26 > .jss2 {
+  padding: 16px;
+}
+.jss27 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.jss27 > .jss2 {
+  padding: 20px;
+}
+.jss28 {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
+.jss29 {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.jss30 {
+  flex-grow: 0;
+  max-width: 8.333333%;
+  flex-basis: 8.333333%;
+}
+.jss31 {
+  flex-grow: 0;
+  max-width: 16.666667%;
+  flex-basis: 16.666667%;
+}
+.jss32 {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.jss33 {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+.jss34 {
+  flex-grow: 0;
+  max-width: 41.666667%;
+  flex-basis: 41.666667%;
+}
+.jss35 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.jss36 {
+  flex-grow: 0;
+  max-width: 58.333333%;
+  flex-basis: 58.333333%;
+}
+.jss37 {
+  flex-grow: 0;
+  max-width: 66.666667%;
+  flex-basis: 66.666667%;
+}
+.jss38 {
+  flex-grow: 0;
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.jss39 {
+  flex-grow: 0;
+  max-width: 83.333333%;
+  flex-basis: 83.333333%;
+}
+.jss40 {
+  flex-grow: 0;
+  max-width: 91.666667%;
+  flex-basis: 91.666667%;
+}
+.jss41 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .jss42 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss43 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss44 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .jss45 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .jss46 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss47 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .jss48 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .jss49 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss50 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .jss51 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .jss52 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss53 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .jss54 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .jss55 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .jss56 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss57 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss58 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .jss59 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .jss60 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss61 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .jss62 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .jss63 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss64 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .jss65 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .jss66 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss67 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .jss68 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .jss69 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .jss70 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss71 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss72 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .jss73 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .jss74 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss75 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .jss76 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .jss77 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss78 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .jss79 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .jss80 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss81 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .jss82 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .jss83 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .jss84 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss85 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss86 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .jss87 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .jss88 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss89 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .jss90 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .jss91 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss92 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .jss93 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .jss94 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss95 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .jss96 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .jss97 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+.jss124 {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.jss124::-moz-focus-inner {
+  border-style: none;
+}
+.jss124.jss125 {
+  cursor: default;
+  pointer-events: none;
+}
+.jss98 {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 1.75;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.jss98:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss98.jss118 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss98:hover {
+    background-color: transparent;
+  }
+}
+.jss98:hover.jss118 {
+  background-color: transparent;
+}
+.jss99 {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.jss100 {
+  padding: 6px 8px;
+}
+.jss101 {
+  color: #3f51b5;
+}
+.jss101:hover {
+  background-color: rgba(63, 81, 181, 0.08);
+}
+@media (hover: none) {
+  .jss101:hover {
+    background-color: transparent;
+  }
+}
+.jss102 {
+  color: #f50057;
+}
+.jss102:hover {
+  background-color: rgba(245, 0, 87, 0.08);
+}
+@media (hover: none) {
+  .jss102:hover {
+    background-color: transparent;
+  }
+}
+.jss106 {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 16px;
+}
+.jss106.jss118 {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.jss107 {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+}
+.jss107:hover {
+  border: 1px solid #3f51b5;
+  background-color: rgba(63, 81, 181, 0.08);
+}
+@media (hover: none) {
+  .jss107:hover {
+    background-color: transparent;
+  }
+}
+.jss108 {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.jss108:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.08);
+}
+.jss108.jss118 {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss108:hover {
+    background-color: transparent;
+  }
+}
+.jss109 {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.jss109.jss117 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.jss109:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.jss109.jss118 {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss109:hover {
+  background-color: #d5d5d5;
+}
+@media (hover: none) {
+  .jss109:hover {
+    background-color: #e0e0e0;
+  }
+}
+.jss109:hover.jss118 {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss110 {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.jss110:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .jss110:hover {
+    background-color: #3f51b5;
+  }
+}
+.jss111 {
+  color: #fff;
+  background-color: #f50057;
+}
+.jss111:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .jss111:hover {
+    background-color: #f50057;
+  }
+}
+.jss115 {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  border-radius: 50%;
+}
+.jss115:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.jss116 {
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  min-width: 48px;
+  border-radius: 24px;
+}
+.jss119 {
+  color: inherit;
+  border-color: currentColor;
+}
+.jss120 {
+  width: 40px;
+  height: 40px;
+}
+.jss121 {
+  padding: 4px 8px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+}
+.jss122 {
+  padding: 8px 24px;
+  font-size: 0.9375rem;
+}
+.jss123 {
+  width: 100%;
+}</style><link as="script" rel="preload" href="/webpack-runtime-90983a93fdc314197260.js"/><link as="script" rel="preload" href="/app-4b8122bc70e572700a78.js"/><link as="script" rel="preload" href="/styles-179cf07b2e648a2ddbed.js"/><link as="script" rel="preload" href="/1-00da09ff9c3ce1265db5.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-4f03a49a96f0b535aaa8.js"/><link as="fetch" rel="preload" href="/static/d/88/path---blog-2016-09-26-899-624-VtQQ7s231O4qaEwjQHWzubaOBQ.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="flex-container"><div class="header"><div class="sidenav"><div class="navgrid"><div class="jss1 jss9 jss18"><div class="jss1 jss9 jss18"><div class="navbutton"><div class="jss2"><a class="jss124 jss98 jss106" tabindex="0" role="button" style="width:7em;text-transform:lowercase;border:1px solid #7a7b7c;margin:-.5px;color:white;border-radius:0 0 0 0" href="/about"><span class="jss99">about</span></a></div></div><div class="navbutton"><div class="jss2"><a class="jss124 jss98 jss106" tabindex="0" role="button" style="width:7em;text-transform:lowercase;border:1px solid #7a7b7c;margin:-.5px;color:white;border-radius:0 0 0 0" href="/projects"><span class="jss99">projects</span></a></div></div></div><div class="jss1 jss9 jss18"><div class="navbutton"><div class="jss2"><a class="jss124 jss98 jss106" tabindex="0" role="button" style="width:7em;text-transform:lowercase;border:1px solid #7a7b7c;margin:-.5px;color:white;border-radius:0 0 0 0;background-color:red" href="/blog"><span class="jss99">blog</span></a></div></div><div class="navbutton"><div class="jss2"><a class="jss124 jss98 jss106" tabindex="0" role="button" style="width:7em;text-transform:lowercase;border:1px solid #7a7b7c;margin:-.5px;color:white;border-radius:0 0 0 0" href="/contact"><span class="jss99">contact</span></a></div></div></div></div></div></div></div><div class="content"><div class="blog-post-container"><div class="blog-post"><h1>Rotating Children of a Non-Uniformly Scaled Parent without Deformation in Unity</h1><em>September 26, 2016</em><br/><br/><div class="blog-post-content"><p>When I was creating <a href="https://drive.google.com/drive/u/1/folders/0B3awpsZxDZ3mMWJ0OXZYM2tMcjQ">Evol</a>, my evolutionary fractal generation program, I ran into a well known problem in Unity. When you child objects to a non-uniformly scaled parent (i.e., a parent whose x, y, and z scale values are different), rotating the children makes them skewed.</p>
+<p>Since fractals are by their nature hierarchical, this produced some strange results when I wanted to thicken the branches of my fractals. </p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/a7984a377bd500ad67d8183a38703fda/0fb93/heartcake.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 33.49007314524556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'134\' viewBox=\'0 0 400 134\' version=\'1\'%3e%3cpath d=\'M0 67v67h401V67l-1-57v11h-62v11h23c0 1-11 2-19 1h-7v5c0 6 1 7 14 6l11-1c0-2 2-2 3-2 7 3-15 7-26 4l-4-1v5c0 6 1 7 11 8 9 0 18-1 19-4 0-2 3-2 3 0 0 4-19 7-30 4-6-2-8-3-6-6 2-1 2-3 2-6l1-4 1-5c0-3 0-5 2-5l1-5v-4h-44l-48 1h-4V0h-53c-57 0-54 0-54 5l-2 3c-2 2-2 2-4 0l-2-5V1L63 0H0v67m328-7c-3 4 2 8 13 10 15 2 31-3 26-9-2-1-2-1-2 1 0 9-33 9-35 0 0-3-1-3-2-2m-2 9c-1 2-2 8-2 17v4-3l6 3c15 8 41 3 41-7 0-6-2-6-3-1-1 7-6 9-18 10-14 1-24-4-24-12l1-3c18 10 48 5 42-6-1-2-1-2-2 1-2 6-7 8-18 8-14 0-20-2-21-9 0-3-1-3-2-2\' fill=\'lightgray\' fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="Heart and Cake"
+        title=""
+        src="/static/a7984a377bd500ad67d8183a38703fda/636b3/heartcake.png"
+        srcset="/static/a7984a377bd500ad67d8183a38703fda/ceca2/heartcake.png 163w,
+/static/a7984a377bd500ad67d8183a38703fda/fcf06/heartcake.png 325w,
+/static/a7984a377bd500ad67d8183a38703fda/636b3/heartcake.png 650w,
+/static/a7984a377bd500ad67d8183a38703fda/9286c/heartcake.png 975w,
+/static/a7984a377bd500ad67d8183a38703fda/95a36/heartcake.png 1300w,
+/static/a7984a377bd500ad67d8183a38703fda/0fb93/heartcake.png 1914w"
+        sizes="(max-width: 650px) 100vw, 650px"
+      />
+  </span>
+  </a></p>
+<p>While I was touched when Unity made me a heart and tiered wedding cake, this isn't what I wanted.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/81db4d439034c5505bf116e2ca65e890/5cdbc/wanted_this.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 206px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 76.27737226277372%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'305\' viewBox=\'0 0 400 305\' version=\'1\'%3e%3cpath d=\'M0 153v152h401V0H0v153m171-63c-2 3-2 3-1 5 2 2 2 4 2 12l1 10-3-3c-4-3-21-3-23 0v4c2 1 3 22 2 22l-3-2c-3-4-20-4-22-1-1 2-1 3 1 5 3 2 4 2 15 2h11l6 6c8 7 8 8 3 10-3 1-6 2-7 4l-3 3h-12c-10 0-12 0-13 2-5 5-1 7 13 7l11 1v11c0 12 0 13 7 12 4-1 4-21 0-22-3-2-3-2 6-10l7-8h22l7 7 7 8v12c0 13 0 14 7 13 4-1 4-19 1-22-3-2-2-3 5-11l7-7h21l8 8 7 7v12c0 13 0 13 6 13h3v-8l-1-9-2-4-2-3h14c14 1 15 1 14-3-1-5-3-5-15-6h-12l-4-4-7-5c-4 0-4-1 3-7l5-6 15-1h15v-3c0-4-2-5-13-6h-9l-1-10c-1-12-1-12-13-13h-10v-9c0-11-1-14-6-14l-5 1c-2 2-2 2 0 5 1 3 2 18 1 23l-3-3c-3-3-3-3-11-3h-8v-9c0-11 0-11-4-13-6-3-11 1-8 5 2 1 2 4 2 11 0 10 0 10-3 8l-11-2h-8l-1-8v-9c0-5-7-8-11-5m-18 31l3 4c3 3 3 4 3 8 0 5 0 6 6 12l6 6h6c4 0 6 0 8 2 3 3 3 3 3-8l1-10-7-7-8-7h-21m97 0l-9 1-7 7-7 7 2 2c2 2 2 3 2 8v5h6c6 0 6 0 12-5 4-5 5-5 8-5h4v-10l-1-10h-10m-44 2l-6 7-6 6 2 2c3 2 3 3 3 10v8l4 4 5 4 3-3c2-3 4-4 7-4h3v-11l1-10-7-7c-6-6-9-8-9-6m178 150c0 5 4 10 7 10l6 3 3 2v-16l-4 1-4-1-3-1-2-1-1-1c-2-1-2 0-2 4\' fill=\'lightgray\' fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="Good fractal"
+        title=""
+        src="/static/81db4d439034c5505bf116e2ca65e890/5cdbc/wanted_this.png"
+        srcset="/static/81db4d439034c5505bf116e2ca65e890/c88e7/wanted_this.png 163w,
+/static/81db4d439034c5505bf116e2ca65e890/5cdbc/wanted_this.png 274w"
+        sizes="(max-width: 206px) 100vw, 206px"
+      />
+  </span>
+  </a></p>
+<div class="caption">Wanted this</div>  
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/6b5091fbddc384e6e4035b379e80b0d7/be4fe/got_this.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 610px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 32.84169124877089%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'131\' viewBox=\'0 0 400 131\' version=\'1\'%3e%3cpath d=\'M0 66v65h401V0h-79a581 581 0 0 0-74 3c-2 1-1 2 1 2h2c1 1 0 1-1 1l-2 1h-1l-2-1v1l-2 2c-1 0-7-5-7-7s-8-2-120-2H0v66m342-39c-20 6-39 13-35 13l37-11c19-6 17-7-2-2M32 27l38 12a2285 2285 0 0 1 8-1c-19-6-46-12-46-11m340 5a684 684 0 0 0-37 11l2 1h-2c-2 1-2 1 0 1 5 0 44-12 46-14l-9 1M4 35l37 11 19 3-2-1 2-1h-2c-4 0-5 0-3-1s1-1-3-1l-15-4a558 558 0 0 0-33-6m214 18l-3 2c-1 0-2 0-3 2-2 1-3 2-4 1-2 0-2 0-1 2v6h-4c-3 2-3 2-6 0-4-1-5-5-3-6l1-2h-2c-2 1-2 1-4-1l-3-2-3-1c-5-3-7-2-4 1 2 2 4 3 5 2 3 0 7 3 7 7 0 2 0 2-6 2l-12-1-9-2 5 2 6 2 7 1c10-1 16 1 17 6s3 5 4 0c0-7 11-9 32-4 7 2 14 3 15 2v1c-1 1-1 1 1 1 2-1 8 0 15 1l14 2-23-5-29-5-4-1 11-3 14-3c2 0 2 0 1-1h-7c-9 3-22 6-27 6-6 0-6 0-6-2 0-3 3-6 7-7 3 0 6-2 6-4s-3-1-5 1m50 9c-1 1-2 2-6 1s-5 0-7 1c-2 2-1 4 2 4l3 2c2 3 6 2 8-2 1-2 2-4 4-4s3-2 1-2l-3-1-2 1m103 6a183 183 0 0 0 16 5l-6 1c-7 1-28 8-28 9l2 1a611 611 0 0 1 41-10c-1-1-1-1 1-1s3 0 3-2-1-2-2-2c-9 2-12 2-34-5l-5-1 12 5M84 95l-33 11c-5 3 10-1 32-8 19-6 19-8 1-3\' fill=\'lightgray\' fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="Bad fractal"
+        title=""
+        src="/static/6b5091fbddc384e6e4035b379e80b0d7/8e3ca/got_this.png"
+        srcset="/static/6b5091fbddc384e6e4035b379e80b0d7/c15fc/got_this.png 163w,
+/static/6b5091fbddc384e6e4035b379e80b0d7/c80bd/got_this.png 325w,
+/static/6b5091fbddc384e6e4035b379e80b0d7/8e3ca/got_this.png 650w,
+/static/6b5091fbddc384e6e4035b379e80b0d7/e7617/got_this.png 975w,
+/static/6b5091fbddc384e6e4035b379e80b0d7/be4fe/got_this.png 1017w"
+        sizes="(max-width: 610px) 100vw, 610px"
+      />
+  </span>
+  </a></p>
+<div class="caption">Got this</div>  
+<p>There are a couple of ways to circumvent this problem, as per aldonaletto's answer <a href="http://answers.unity3d.com/questions/197739/object-skewing-on-rotation.html">here</a>. One is to parent your rotated objects and your non-uniformly scaled object to an empty, uniformly scaled object. I didn't choose this approach because it was important to me that the object hierarchy remain unchanged.</p>
+<p>Another solution is to create the objects in their correct scale in an external 3D modeling program such as Blender. This way, you can leave the scale as 1,1,1 in Unity. I couldn't do it this way since my intention was to create several objects with different scales programmatically. </p>
+<p>My solution was to forgo Unity's built in scale system altogether and manually edit the mesh myself. While I can't guarantee this will work for any models more complex than the simple cylinders that comprise my fractals' branches, it worked well for me.</p>
+<pre><code>public static void Scale (MeshFilter originalMesh, float x, float y, float z)
+{
+  Vector3[] verts = originalMesh.mesh.vertices; // get all vertices from the mesh
+
+  for (int i = 0; i < verts.Length; i++)
+    verts[i] = Vector3.Scale(verts[i], new Vector3(x, y, z)); // scale the vertices
+    
+  originalMesh.mesh.vertices = verts; // reassign the vertices back to the mesh
+}</code></pre>
+<p>Then I just called it like this...</p>
+<p>...and voila!</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/da3aa5870a3506ae78fa5abfcd74380a/0d38f/voila.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 503px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 36.591179976162095%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'146\' viewBox=\'0 0 400 146\' version=\'1\'%3e%3cpath d=\'M0 73v73h401V0h-15c-14 0-16 0-15 2h1l2-1-1 2v4c1 6-4 10-7 6l-3-3-2-3-2-5-1-2H0v73M134 7l1 3 3 5 3 5 3 3c2 3 4 2 6 0v-8l1-2 1-2-2 1c0 1-1 1-1-1h-4c-2 2-3 2-7-2l-4-2m128 3c-3 2-2 4 1 8l12 16 9 12v27l-3-4c-2-4-3-4-10-7-11-4-10-3-22-18-10-14-13-16-17-13s-4 4 0 8l21 26-6-3-6-2-10 2c-11 2-14 4-13 7 1 4 3 4 20 1l17-3 15 5 15 6 9 12c10 13 10 10 10 30 0 10 0 10 2 10 5 0 5-2 5-15 0-12-1-13-3-13s-1-1 7-12c10-15 7-13 24-19l14-6 16 3c18 3 20 3 20-1s-3-6-14-7c-10-2-11-2-14-1l-3 2c-1-1 15-22 17-23 4-1 4-3 1-6-3-4-8-4-9 0 0 2-4 8-9 15l-8 12h-2c-1-2-2-1-11 2l-9 4V55l-1-9c-3 0-3 0 5-12a363 363 0 0 0 13-16c3-1 4-4 1-7s-11-2-9 2l-6 10-7 11-2-2c-4-8-14-22-17-23-3 0-7 2-7 4 1 1-1 5-5 11l-7 12c-1 1-1 1-1-1 0-3-9-17-15-23-2-3-5-4-8-2M62 19l8 11 8 12 1 12v13l-2-1-12-5-10-4-8-11c-6-9-10-13-10-10l8 11 8 11h-3c-5 0-22 4-22 5-2 2 2 1 15-1l12-3 12 5 12 4 7 10 7 10v12l1 12 1-12V87l6-8c7-10 7-11 6-11l-7 8-6 9-7-9-7-10V42l7-11 7-10 7 10 7 11v26l12-5 12-5 13 3 14 1c1-1-2-2-13-4l-12-2 8-10c7-10 8-12 6-12l-8 11-8 11-11 4-11 5V41l8-11 7-12-2 1-7 10-7 10-3-3-7-11c-4-6-7-9-7-6L79 39l-8-10c-6-9-9-13-9-10m241 1l-8 14c-8 11-8 12-5 12 2 1 2 2 2 14l1 13 11 16 2 3 5-8c4-6 6-8 8-8h2V44l-8-12c-10-14-10-14-10-12m96 58l-6 1h-7l-4 2c-2 1-1 2 3 5l6 4c1 2 2 2 2 1l4-1c2 0 3-2 3-9l-1-3M176 88h-6c-5 0-12 2-11 4l4 4 6 4c1 2 2 2 2 1l3-1c2 0 3-1 4-3l2-4 2-1 2-1c2-1 2-1 1-3h-9\' fill=\'lightgray\' fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="Before and after fractal"
+        title=""
+        src="/static/da3aa5870a3506ae78fa5abfcd74380a/33b67/voila.png"
+        srcset="/static/da3aa5870a3506ae78fa5abfcd74380a/f1ef2/voila.png 163w,
+/static/da3aa5870a3506ae78fa5abfcd74380a/6236f/voila.png 325w,
+/static/da3aa5870a3506ae78fa5abfcd74380a/33b67/voila.png 650w,
+/static/da3aa5870a3506ae78fa5abfcd74380a/0d38f/voila.png 839w"
+        sizes="(max-width: 503px) 100vw, 503px"
+      />
+  </span>
+  </a></p></div></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-template-js","jsonName":"blog-2016-09-26-899","path":"/blog/2016-09-26"};window.dataPath="88/path---blog-2016-09-26-899-624-VtQQ7s231O4qaEwjQHWzubaOBQ";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4b8122bc70e572700a78.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-4f03a49a96f0b535aaa8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-04701c03156d2f4a3f66.js"],"component---src-pages-about-js":["/component---src-pages-about-js-997516a9081428665c04.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-7c2e5c363446113926a8.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-981b0c510f2144525a78.js"],"component---src-pages-index-js":["/component---src-pages-index-js-c5783ccfd8d225c5fcd6.js"],"component---src-pages-my-files-js":["/component---src-pages-my-files-js-8d79b526995e6e5afcf4.js"],"component---src-pages-projects-js":["/component---src-pages-projects-js-486c391c44aef511de2b.js"],"pages-manifest":["/pages-manifest-33e51a06a4b3fe7dcf19.js"]};/*]]>*/</script><script src="/component---src-templates-blog-template-js-4f03a49a96f0b535aaa8.js" async=""></script><script src="/1-00da09ff9c3ce1265db5.js" async=""></script><script src="/styles-179cf07b2e648a2ddbed.js" async=""></script><script src="/app-4b8122bc70e572700a78.js" async=""></script><script src="/webpack-runtime-90983a93fdc314197260.js" async=""></script></body></html>
